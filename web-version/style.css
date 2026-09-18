@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    margin-bottom: 20px;
+    color: #1f2937;
+}
+
+#studentForm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+#studentForm button {
+    grid-column: 1 / -1;
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#searchRoll {
+    width: 300px;
+    margin-right: 10px;
+}
+
+#searchResult {
+    margin-top: 15px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #1f2937;
+    color: white;
+}
+
+tr:hover {
+    background: #f8fafc;
+}
+
+.statistics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.statistics div {
+    background: #f8fafc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.statistics h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.statistics p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #666;
+}
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    #studentForm {
+        grid-template-columns: 1fr;
+    }
+
+    .statistics {
+        grid-template-columns: 1fr;
+    }
+
+    #searchRoll {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+.sort-controls {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sort-controls label {
+    font-weight: bold;
+}
+
+.sort-controls select {
+    padding: 9px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.sort-controls select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+.edit-button {
+    background: #16a34a;
+    margin-right: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.edit-button:hover {
+    background: #15803d;
+}
+
+.delete-button {
+    background: #dc2626;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.delete-button:hover {
+    background: #b91c1c;
+}
+#clearAllButton {
+    background: #dc2626;
+    margin-bottom: 15px;
+}
+
+#clearAllButton:hover {
+    background: #b91c1c;
+}
+.records-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.records-header h2 {
+    margin-bottom: 0;
+}
+
+#recordCount {
+    background: #e5e7eb;
+    color: #374151;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+
+    .records-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .edit-button,
+    .delete-button {
+        margin-bottom: 5px;
+    }
+}
