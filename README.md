@@ -39,8 +39,21 @@ This project allows users to add, view, search, update, delete, sort, and manage
 ```text
 student_record_management_system/
 │
+├── .gitignore
 ├── main.c
 ├── student.c
 ├── student.h
-├── students.dat
-└── README.md
+├── README.md
+└── screenshots/
+    ├── students.png
+    └── statistics.png
+
+## Screenshots
+
+### Student Records
+
+![Student Records](screenshots/students.png)
+
+### Student Statistics
+
+![Student Statistics](screenshots/statistics.png)
